@@ -1,0 +1,1702 @@
+{
+  "accompany": {
+    "word": "accompany",
+    "definition": "to play or sing along with another singer or instrument",
+    "variations": [
+      "accompany",
+      "accompanies",
+      "accompanied",
+      "accompanying"
+    ],
+    "emoji": "🎶🤝"
+  },
+  "accuracy": {
+    "word": "accuracy",
+    "definition": "being correct or exact",
+    "variations": [
+      "accuracy"
+    ],
+    "emoji": "🎯✅"
+  },
+  "acting": {
+    "word": "acting",
+    "definition": "the skill of pretending to be someone or something in order to show a story or idea",
+    "variations": [
+      "act",
+      "acts",
+      "acted",
+      "acting"
+    ],
+    "emoji": "🎭🗣️"
+  },
+  "actor": {
+    "word": "actor",
+    "definition": "a person who acts in a play or story",
+    "variations": [
+      "actor",
+      "actors",
+      "actress",
+      "actresses"
+    ],
+    "emoji": "🎭🧑‍🎤"
+  },
+  "advertisement": {
+    "word": "advertisement",
+    "definition": "a notice that tells people about an event, product, or activity.",
+    "variations": [
+      "advertisement",
+      "advertisements"
+    ],
+    "emoji": "📢📰"
+  },
+  "agility": {
+    "word": "agility",
+    "definition": "the ability to move quickly and easily with good control of your body",
+    "variations": [
+      "agility"
+    ],
+    "emoji": "🏃⚡"
+  },
+  "alternate": {
+    "word": "alternate",
+    "definition": "to change back and forth between two sides, actions, or things",
+    "variations": [
+      "alternate",
+      "alternates",
+      "alternating",
+      "alternated"
+    ],
+    "emoji": "🔄↔️"
+  },
+  "anthem": {
+    "word": "anthem",
+    "definition": "an important song of a nation, school, or group",
+    "variations": [
+      "anthem",
+      "anthems"
+    ],
+    "emoji": "🇹🇿🎶"
+  },
+  "anthill": {
+    "word": "anthill",
+    "definition": "a mound of soil made by ants where they live",
+    "variations": [
+      "anthill",
+      "anthills"
+    ],
+    "emoji": "🐜⛰️"
+  },
+  "appearance": {
+    "word": "appearance",
+    "definition": "the way something looks",
+    "variations": [
+      "appearance",
+      "appearances"
+    ],
+    "emoji": "👀🖼️"
+  },
+  "arrange": {
+    "word": "arrange",
+    "definition": "to put things in a planned order or position",
+    "variations": [
+      "arrange",
+      "arranges",
+      "arranging",
+      "arranged"
+    ],
+    "emoji": "🧩📚"
+  },
+  "arrangement": {
+    "word": "arrangement",
+    "definition": "the way things are placed or organized.",
+    "variations": [
+      "arrangement",
+      "arrangements",
+      "arrange",
+      "arranged",
+      "arranging"
+    ],
+    "emoji": "🧩📐"
+  },
+  "artist": {
+    "word": "artist",
+    "definition": "a person who has skill in creating art",
+    "variations": [
+      "artist",
+      "artists"
+    ],
+    "emoji": "🎨🖌️"
+  },
+  "artwork": {
+    "word": "artwork",
+    "definition": "a piece of art made by someone.",
+    "variations": [
+      "artwork",
+      "artworks"
+    ],
+    "emoji": "🖼️🎨"
+  },
+  "attractive": {
+    "word": "attractive",
+    "definition": "pleasant or interesting so that people like it",
+    "variations": [
+      "attractive"
+    ],
+    "emoji": "✨😊"
+  },
+  "audience": {
+    "word": "audience",
+    "definition": "the people who watch or listen to a performance",
+    "variations": [
+      "audience",
+      "audiences"
+    ],
+    "emoji": "👥👏"
+  },
+  "balance": {
+    "word": "balance",
+    "definition": "the ability to keep the body steady without falling",
+    "variations": [
+      "balance",
+      "balances",
+      "balanced",
+      "balancing"
+    ],
+    "emoji": "⚖️🧍"
+  },
+  "balanced": {
+    "word": "balanced",
+    "definition": "kept steady so that it does not fall.",
+    "variations": [
+      "balance",
+      "balances",
+      "balanced",
+      "balancing"
+    ],
+    "emoji": "⚖️🧍"
+  },
+  "benefit": {
+    "word": "benefit",
+    "definition": "a good result or advantage from something",
+    "variations": [
+      "benefit",
+      "benefits"
+    ],
+    "emoji": "✅🌟"
+  },
+  "boundary": {
+    "word": "boundary",
+    "definition": "a line or limit that shows the edge of an area",
+    "variations": [
+      "boundary",
+      "boundaries"
+    ],
+    "emoji": "📏🚧"
+  },
+  "bow": {
+    "word": "bow",
+    "definition": "a tool with hair or string used to rub the strings of instruments like a violin",
+    "variations": [
+      "bow",
+      "bows"
+    ],
+    "emoji": "🎻↔️"
+  },
+  "breathing": {
+    "word": "breathing",
+    "definition": "the act of taking air in and out of the body",
+    "variations": [
+      "breathe",
+      "breathes",
+      "breathed",
+      "breathing",
+      "breath"
+    ],
+    "emoji": "🌬️🫁"
+  },
+  "brush": {
+    "word": "brush",
+    "definition": "a tool with hairs or fibres used for painting",
+    "variations": [
+      "brush",
+      "brushes"
+    ],
+    "emoji": "🖌️🎨"
+  },
+  "chalk": {
+    "word": "chalk",
+    "definition": "a soft white or coloured stick used for writing or drawing",
+    "variations": [
+      "chalk",
+      "chalks"
+    ],
+    "emoji": "⬜✍️"
+  },
+  "character": {
+    "word": "character",
+    "definition": "a person or animal in a story or play",
+    "variations": [
+      "character",
+      "characters"
+    ],
+    "emoji": "🧍📖"
+  },
+  "choir": {
+    "word": "choir",
+    "definition": "a group of singers who sing together",
+    "variations": [
+      "choir",
+      "choirs"
+    ],
+    "emoji": "🎵👨‍🎤👩‍🎤"
+  },
+  "claves": {
+    "word": "claves",
+    "definition": "two short sticks that are struck together to make rhythm",
+    "variations": [
+      "claves"
+    ],
+    "emoji": "🥢🎶"
+  },
+  "clay": {
+    "word": "clay",
+    "definition": "soft earth that can be shaped when wet and becomes hard when dry or baked",
+    "variations": [
+      "clay"
+    ],
+    "emoji": "🟤✋"
+  },
+  "coiling": {
+    "word": "coiling",
+    "definition": "a method of making clay objects by rolling clay into long ropes and laying them in circles",
+    "variations": [
+      "coil",
+      "coils",
+      "coiled",
+      "coiling"
+    ],
+    "emoji": "🌀🟤"
+  },
+  "collision": {
+    "word": "collision",
+    "definition": "the act of two things hitting each other",
+    "variations": [
+      "collision",
+      "collisions"
+    ],
+    "emoji": "💥↔️"
+  },
+  "comic skit": {
+    "word": "comic skit",
+    "definition": "a short funny performance that makes the audience laugh and also gives a message",
+    "variations": [
+      "comic skit",
+      "comic skits",
+      "skit",
+      "skits"
+    ],
+    "emoji": "😂🎭"
+  },
+  "command": {
+    "word": "command",
+    "definition": "an order or signal telling people when to do something.",
+    "variations": [
+      "command",
+      "commands",
+      "commanded"
+    ],
+    "emoji": "🗣️✋"
+  },
+  "communicate": {
+    "word": "communicate",
+    "definition": "to share information, ideas, or feelings with others",
+    "variations": [
+      "communicate",
+      "communicates",
+      "communicated",
+      "communicating",
+      "communication"
+    ],
+    "emoji": "🗣️💬"
+  },
+  "community": {
+    "word": "community",
+    "definition": "a group of people living or working in the same area",
+    "variations": [
+      "community",
+      "communities"
+    ],
+    "emoji": "🏘️👨‍👩‍👧‍👦"
+  },
+  "compete": {
+    "word": "compete",
+    "definition": "to try to win against another person or team",
+    "variations": [
+      "compete",
+      "competes",
+      "competing",
+      "competed",
+      "competition"
+    ],
+    "emoji": "🏁🏆"
+  },
+  "competency": {
+    "word": "competency",
+    "definition": "an important skill or ability to do something well",
+    "variations": [
+      "competency",
+      "competencies"
+    ],
+    "emoji": "⭐🧠"
+  },
+  "competition": {
+    "word": "competition",
+    "definition": "an event in which people try to win by doing something better than others.",
+    "variations": [
+      "competition",
+      "competitions",
+      "compete",
+      "competes",
+      "competed",
+      "competing",
+      "competitive"
+    ],
+    "emoji": "🏆🥇"
+  },
+  "competitive": {
+    "word": "competitive",
+    "definition": "wanting to do better than others and to win",
+    "variations": [
+      "competitive",
+      "competitively",
+      "competition",
+      "compete"
+    ],
+    "emoji": "🏆🔥"
+  },
+  "concert": {
+    "word": "concert",
+    "definition": "a musical performance where people sing or play instruments for others",
+    "variations": [
+      "concert",
+      "concerts"
+    ],
+    "emoji": "🎶🎤"
+  },
+  "confident": {
+    "word": "confident",
+    "definition": "feeling sure of yourself and what you can do",
+    "variations": [
+      "confident",
+      "confidence",
+      "confidently"
+    ],
+    "emoji": "😌⭐"
+  },
+  "conflict": {
+    "word": "conflict",
+    "definition": "a fight, disagreement, or serious argument",
+    "variations": [
+      "conflict",
+      "conflicts"
+    ],
+    "emoji": "⚠️😠"
+  },
+  "convey": {
+    "word": "convey",
+    "definition": "to communicate or pass on an idea or message",
+    "variations": [
+      "convey",
+      "conveys",
+      "conveyed",
+      "conveying"
+    ],
+    "emoji": "📢💬"
+  },
+  "costume": {
+    "word": "costume",
+    "definition": "special clothes worn by an actor to look like a character",
+    "variations": [
+      "costume",
+      "costumes"
+    ],
+    "emoji": "👗🎭"
+  },
+  "crayon": {
+    "word": "crayon",
+    "definition": "a coloured stick used for drawing or colouring",
+    "variations": [
+      "crayon",
+      "crayons"
+    ],
+    "emoji": "🖍️🎨"
+  },
+  "creativity": {
+    "word": "creativity",
+    "definition": "the ability to think of new and original ideas",
+    "variations": [
+      "creativity",
+      "creative"
+    ],
+    "emoji": "💡🎨"
+  },
+  "culture": {
+    "word": "culture",
+    "definition": "the way of life, beliefs, and customs of a group of people",
+    "variations": [
+      "culture",
+      "cultures",
+      "cultural"
+    ],
+    "emoji": "🌍🎎"
+  },
+  "cymbal": {
+    "word": "cymbal",
+    "definition": "a round metal instrument that makes sound when struck",
+    "variations": [
+      "cymbal",
+      "cymbals"
+    ],
+    "emoji": "🥏🎵"
+  },
+  "decoration": {
+    "word": "decoration",
+    "definition": "something added to make an object or place look better",
+    "variations": [
+      "decoration",
+      "decorations"
+    ],
+    "emoji": "✨🎨"
+  },
+  "development": {
+    "word": "development",
+    "definition": "the process of improving or becoming more advanced",
+    "variations": [
+      "development",
+      "develop",
+      "develops",
+      "developing"
+    ],
+    "emoji": "📈🌟"
+  },
+  "digital": {
+    "word": "digital",
+    "definition": "using electronic technology such as computers or screens",
+    "variations": [
+      "digital"
+    ],
+    "emoji": "💻📱"
+  },
+  "display": {
+    "word": "display",
+    "definition": "to put something where people can see it.",
+    "variations": [
+      "display",
+      "displays",
+      "displayed",
+      "displaying"
+    ],
+    "emoji": "🖼️👀"
+  },
+  "dodge": {
+    "word": "dodge",
+    "definition": "to move quickly to avoid being hit",
+    "variations": [
+      "dodge",
+      "dodges",
+      "dodging",
+      "dodged"
+    ],
+    "emoji": "↩️🏃"
+  },
+  "dramatic poetry": {
+    "word": "dramatic poetry",
+    "definition": "poetry written to be recited in public or acted out",
+    "variations": [
+      "dramatic poetry"
+    ],
+    "emoji": "📜🎭"
+  },
+  "drawing": {
+    "word": "drawing",
+    "definition": "the art of making pictures using tools like a pencil",
+    "variations": [
+      "drawing",
+      "drawings"
+    ],
+    "emoji": "✏️🖼️"
+  },
+  "drawing board": {
+    "word": "drawing board",
+    "definition": "a flat board used to support paper while drawing",
+    "variations": [
+      "drawing board",
+      "drawing boards"
+    ],
+    "emoji": "🖼️📏"
+  },
+  "drum": {
+    "word": "drum",
+    "definition": "a musical instrument that is beaten with hands or sticks",
+    "variations": [
+      "drum",
+      "drums"
+    ],
+    "emoji": "🥁"
+  },
+  "elaborate": {
+    "word": "elaborate",
+    "definition": "to explain something in more detail.",
+    "variations": [
+      "elaborate",
+      "elaborates",
+      "elaborated",
+      "elaborating"
+    ],
+    "emoji": "🗣️📖"
+  },
+  "electronic": {
+    "word": "electronic",
+    "definition": "using electricity in devices such as radios, speakers, or computers.",
+    "variations": [
+      "electronic",
+      "electronics"
+    ],
+    "emoji": "🔌📱"
+  },
+  "emotion": {
+    "word": "emotion",
+    "definition": "a strong feeling such as joy, anger, or sadness",
+    "variations": [
+      "emotion",
+      "emotions"
+    ],
+    "emoji": "😊😠😢"
+  },
+  "entertainment": {
+    "word": "entertainment",
+    "definition": "something that gives people enjoyment, such as music, games, or shows",
+    "variations": [
+      "entertainment"
+    ],
+    "emoji": "🎉🎶"
+  },
+  "environment": {
+    "word": "environment",
+    "definition": "the place and conditions around a person, animal, or thing",
+    "variations": [
+      "environment",
+      "environments"
+    ],
+    "emoji": "🌍🌳"
+  },
+  "equipment": {
+    "word": "equipment",
+    "definition": "the tools or things needed for an activity.",
+    "variations": [
+      "equipment"
+    ],
+    "emoji": "🧰🛠️"
+  },
+  "evaluate": {
+    "word": "evaluate",
+    "definition": "to judge how good, useful, or successful something is.",
+    "variations": [
+      "evaluate",
+      "evaluates",
+      "evaluated",
+      "evaluating",
+      "evaluation"
+    ],
+    "emoji": "📝✅"
+  },
+  "exercise": {
+    "word": "exercise",
+    "definition": "physical activity that helps make the body strong and healthy",
+    "variations": [
+      "exercise",
+      "exercises",
+      "exercising"
+    ],
+    "emoji": "💪🏃"
+  },
+  "exhibition": {
+    "word": "exhibition",
+    "definition": "a public display of works such as art.",
+    "variations": [
+      "exhibition",
+      "exhibitions"
+    ],
+    "emoji": "🖼️🏫"
+  },
+  "express": {
+    "word": "express",
+    "definition": "to show or communicate thoughts or feelings",
+    "variations": [
+      "express",
+      "expresses",
+      "expressed",
+      "expressing"
+    ],
+    "emoji": "😊🗣️"
+  },
+  "feelings": {
+    "word": "feelings",
+    "definition": "emotions such as happiness, sadness, or fear",
+    "variations": [
+      "feeling",
+      "feelings"
+    ],
+    "emoji": "😊😢"
+  },
+  "finish line": {
+    "word": "finish line",
+    "definition": "the line at the end of a race.",
+    "variations": [
+      "finish line",
+      "finish lines"
+    ],
+    "emoji": "🏁👟"
+  },
+  "fitness": {
+    "word": "fitness",
+    "definition": "being healthy, strong, and able to do physical activity well",
+    "variations": [
+      "fitness",
+      "fit"
+    ],
+    "emoji": "💪🏃"
+  },
+  "flute": {
+    "word": "flute",
+    "definition": "a wind instrument that makes sound when air is blown into it",
+    "variations": [
+      "flute",
+      "flutes"
+    ],
+    "emoji": "🎶🪈"
+  },
+  "gallery": {
+    "word": "gallery",
+    "definition": "a room or building where people can see works of art",
+    "variations": [
+      "gallery",
+      "galleries"
+    ],
+    "emoji": "🖼️🏛️"
+  },
+  "generate income": {
+    "word": "generate income",
+    "definition": "to earn money from work or an activity",
+    "variations": [
+      "generate income",
+      "generated income",
+      "generating income"
+    ],
+    "emoji": "💰📈"
+  },
+  "gesture": {
+    "word": "gesture",
+    "definition": "a movement of the hands, face, or body that shows meaning or feeling",
+    "variations": [
+      "gesture",
+      "gestures"
+    ],
+    "emoji": "🙌🙂"
+  },
+  "grapevine steps": {
+    "word": "grapevine steps",
+    "definition": "a movement exercise where a person steps sideways and crosses the legs in a pattern",
+    "variations": [
+      "grapevine step",
+      "grapevine steps"
+    ],
+    "emoji": "👣↔️"
+  },
+  "growth": {
+    "word": "growth",
+    "definition": "the process of becoming bigger, stronger, or more developed",
+    "variations": [
+      "growth",
+      "grow",
+      "grows",
+      "growing"
+    ],
+    "emoji": "🌱📈"
+  },
+  "guidance": {
+    "word": "guidance",
+    "definition": "help or advice on what to do.",
+    "variations": [
+      "guidance",
+      "guide",
+      "guides",
+      "guided",
+      "guiding"
+    ],
+    "emoji": "🧭👩‍🏫"
+  },
+  "guidelines": {
+    "word": "guidelines",
+    "definition": "instructions or advice on how to do something",
+    "variations": [
+      "guideline",
+      "guidelines"
+    ],
+    "emoji": "📋➡️"
+  },
+  "guitar": {
+    "word": "guitar",
+    "definition": "a stringed instrument usually played by plucking or strumming",
+    "variations": [
+      "guitar",
+      "guitars"
+    ],
+    "emoji": "🎸"
+  },
+  "harmony": {
+    "word": "harmony",
+    "definition": "different musical sounds that go well together",
+    "variations": [
+      "harmony",
+      "harmonies"
+    ],
+    "emoji": "🎶🤝"
+  },
+  "harp": {
+    "word": "harp",
+    "definition": "a large stringed instrument with many strings that are plucked",
+    "variations": [
+      "harp",
+      "harps"
+    ],
+    "emoji": "🎼🪕"
+  },
+  "heel-to-toe walk": {
+    "word": "heel-to-toe walk",
+    "definition": "a walking exercise where the heel of one foot is placed directly in front of the toes of the other foot",
+    "variations": [
+      "heel-to-toe walk",
+      "heel-to-toe walks"
+    ],
+    "emoji": "👣🚶"
+  },
+  "imitate": {
+    "word": "imitate",
+    "definition": "to copy the sound, action, or way of something or someone",
+    "variations": [
+      "imitate",
+      "imitates",
+      "imitated",
+      "imitating",
+      "imitation"
+    ],
+    "emoji": "🦜🔁"
+  },
+  "income": {
+    "word": "income",
+    "definition": "money a person earns from work or selling things",
+    "variations": [
+      "income",
+      "incomes"
+    ],
+    "emoji": "💰📈"
+  },
+  "inhale": {
+    "word": "inhale",
+    "definition": "to breathe air into the body",
+    "variations": [
+      "inhale",
+      "inhales",
+      "inhaled",
+      "inhaling"
+    ],
+    "emoji": "🌬️⬇️"
+  },
+  "instrument": {
+    "word": "instrument",
+    "definition": "a tool or object used to make music",
+    "variations": [
+      "instrument",
+      "instruments"
+    ],
+    "emoji": "🎹🎺"
+  },
+  "intended": {
+    "word": "intended",
+    "definition": "planned or meant to happen in a certain way",
+    "variations": [
+      "intended",
+      "intend",
+      "intends",
+      "intending"
+    ],
+    "emoji": "🎯📝"
+  },
+  "knead": {
+    "word": "knead",
+    "definition": "to press and fold clay or dough again and again until it becomes soft and smooth",
+    "variations": [
+      "knead",
+      "kneads",
+      "kneaded",
+      "kneading"
+    ],
+    "emoji": "👐🔄"
+  },
+  "ladder": {
+    "word": "ladder",
+    "definition": "a piece of equipment with bars or spaces used for climbing or for stepping exercises",
+    "variations": [
+      "ladder",
+      "ladders"
+    ],
+    "emoji": "🪜👣"
+  },
+  "leader": {
+    "word": "leader",
+    "definition": "a person who guides or directs others",
+    "variations": [
+      "leader",
+      "leaders"
+    ],
+    "emoji": "🧑‍🏫📣"
+  },
+  "lump": {
+    "word": "lump",
+    "definition": "a small mass or piece of something soft",
+    "variations": [
+      "lump",
+      "lumps"
+    ],
+    "emoji": "🟤"
+  },
+  "manual": {
+    "word": "manual",
+    "definition": "done by using the hands instead of a machine",
+    "variations": [
+      "manual",
+      "manually"
+    ],
+    "emoji": "🖐️👐"
+  },
+  "maracas": {
+    "word": "maracas",
+    "definition": "musical instruments that are shaken to make sound",
+    "variations": [
+      "maraca",
+      "maracas"
+    ],
+    "emoji": "🪇🎶"
+  },
+  "mass": {
+    "word": "mass",
+    "definition": "a crowd or group of people",
+    "variations": [
+      "mass",
+      "masses"
+    ],
+    "emoji": "👨‍👩‍👧‍👦🧑‍🤝‍🧑"
+  },
+  "material": {
+    "word": "material",
+    "definition": "the substance or thing used to make something",
+    "variations": [
+      "material",
+      "materials"
+    ],
+    "emoji": "🧵🪵"
+  },
+  "meaningful": {
+    "word": "meaningful",
+    "definition": "having an important or clear message",
+    "variations": [
+      "meaningful"
+    ],
+    "emoji": "💡🧠"
+  },
+  "message": {
+    "word": "message",
+    "definition": "the idea or information that someone wants others to understand",
+    "variations": [
+      "message",
+      "messages"
+    ],
+    "emoji": "💬📨"
+  },
+  "model": {
+    "word": "model",
+    "definition": "to shape or make something, especially from clay or another material",
+    "variations": [
+      "model",
+      "models",
+      "modelled",
+      "modelling"
+    ],
+    "emoji": "🧱✋"
+  },
+  "modelling": {
+    "word": "modelling",
+    "definition": "the act of shaping a material such as clay into an object or figure",
+    "variations": [
+      "modelling",
+      "modeling"
+    ],
+    "emoji": "👐🟤"
+  },
+  "mould": {
+    "word": "mould",
+    "definition": "to shape something using the hands or a form",
+    "variations": [
+      "mould",
+      "moulds",
+      "moulding",
+      "moulded",
+      "mold",
+      "molds",
+      "molding",
+      "molded"
+    ],
+    "emoji": "✋🧱"
+  },
+  "musical instrument": {
+    "word": "musical instrument",
+    "definition": "a tool used to make musical sounds",
+    "variations": [
+      "musical instrument",
+      "musical instruments"
+    ],
+    "emoji": "🎵🎺"
+  },
+  "musician": {
+    "word": "musician",
+    "definition": "a person who plays music or sings",
+    "variations": [
+      "musician",
+      "musicians"
+    ],
+    "emoji": "🎼🧑‍🎤"
+  },
+  "narration": {
+    "word": "narration",
+    "definition": "the act of telling a story or describing events",
+    "variations": [
+      "narration",
+      "narrations"
+    ],
+    "emoji": "📖🗣️"
+  },
+  "national identity": {
+    "word": "national identity",
+    "definition": "the feeling of belonging to your nation and being proud of it",
+    "variations": [
+      "national identity",
+      "national identities"
+    ],
+    "emoji": "🏳️🌍"
+  },
+  "numeracy": {
+    "word": "numeracy",
+    "definition": "the ability to understand and use numbers",
+    "variations": [
+      "numeracy"
+    ],
+    "emoji": "🔢🧠"
+  },
+  "obey": {
+    "word": "obey",
+    "definition": "to follow rules, orders, or instructions",
+    "variations": [
+      "obey",
+      "obeys",
+      "obeyed",
+      "obeying"
+    ],
+    "emoji": "📏✅"
+  },
+  "paint": {
+    "word": "paint",
+    "definition": "a coloured liquid used to make pictures or cover surfaces",
+    "variations": [
+      "paint",
+      "paints",
+      "painting",
+      "paintings"
+    ],
+    "emoji": "🎨🖌️"
+  },
+  "paper clip": {
+    "word": "paper clip",
+    "definition": "a small bent piece of metal used to hold papers together",
+    "variations": [
+      "paper clip",
+      "paper clips"
+    ],
+    "emoji": "📎"
+  },
+  "participate": {
+    "word": "participate",
+    "definition": "to take part in an activity or event.",
+    "variations": [
+      "participate",
+      "participates",
+      "participated",
+      "participating",
+      "participation"
+    ],
+    "emoji": "🙋🎭🏅"
+  },
+  "pebble": {
+    "word": "pebble",
+    "definition": "a small smooth stone",
+    "variations": [
+      "pebble",
+      "pebbles"
+    ],
+    "emoji": "🪨"
+  },
+  "pencil": {
+    "word": "pencil",
+    "definition": "a tool used for writing or drawing",
+    "variations": [
+      "pencil",
+      "pencils"
+    ],
+    "emoji": "✏️"
+  },
+  "percussion instrument": {
+    "word": "percussion instrument",
+    "definition": "a musical instrument that makes sound when it is shaken, hit, or tapped",
+    "variations": [
+      "percussion instrument",
+      "percussion instruments"
+    ],
+    "emoji": "🥁🪇"
+  },
+  "perform": {
+    "word": "perform",
+    "definition": "to sing, act, dance, or play in front of people",
+    "variations": [
+      "perform",
+      "performs",
+      "performed",
+      "performing",
+      "performance"
+    ],
+    "emoji": "🎭🎤"
+  },
+  "performance": {
+    "word": "performance",
+    "definition": "an act of singing, acting, dancing, or doing something in front of other people",
+    "variations": [
+      "performance",
+      "performances",
+      "perform",
+      "performs",
+      "performed",
+      "performing"
+    ],
+    "emoji": "🎤🎭✨"
+  },
+  "performing arts": {
+    "word": "performing arts",
+    "definition": "activities like acting, singing, and dancing that people do in front of others",
+    "variations": [
+      "performing art",
+      "performing arts"
+    ],
+    "emoji": "🎭🎶💃"
+  },
+  "physical exercise": {
+    "word": "physical exercise",
+    "definition": "body movement done to improve health, strength, or fitness",
+    "variations": [
+      "physical exercise",
+      "physical exercises"
+    ],
+    "emoji": "🏃💪"
+  },
+  "physical fitness": {
+    "word": "physical fitness",
+    "definition": "the condition of being healthy, strong, and able to do physical activities well",
+    "variations": [
+      "physical fitness"
+    ],
+    "emoji": "💪🏃‍♂️"
+  },
+  "picture": {
+    "word": "picture",
+    "definition": "an image that shows a real object, person, place, or idea",
+    "variations": [
+      "picture",
+      "pictures"
+    ],
+    "emoji": "🖼️📷"
+  },
+  "pinching": {
+    "word": "pinching",
+    "definition": "a method of shaping clay by pressing it with the fingers and thumb",
+    "variations": [
+      "pinch",
+      "pinches",
+      "pinched",
+      "pinching"
+    ],
+    "emoji": "🤏🟤"
+  },
+  "pinching method": {
+    "word": "pinching method",
+    "definition": "a way of shaping clay by pressing and squeezing it with the fingers",
+    "variations": [
+      "pinching method"
+    ],
+    "emoji": "🤏🟤"
+  },
+  "platform": {
+    "word": "platform",
+    "definition": "a raised place where people stand to speak, sing, or perform",
+    "variations": [
+      "platform",
+      "platforms"
+    ],
+    "emoji": "🪜🎤"
+  },
+  "play": {
+    "word": "play",
+    "definition": "a story acted by people in front of an audience",
+    "variations": [
+      "play",
+      "plays"
+    ],
+    "emoji": "🎭📖"
+  },
+  "plectrum": {
+    "word": "plectrum",
+    "definition": "a small tool used to pluck the strings of some instruments",
+    "variations": [
+      "plectrum",
+      "plectra",
+      "plectrums"
+    ],
+    "emoji": "🎸✋"
+  },
+  "poster": {
+    "word": "poster",
+    "definition": "a large sheet of paper or card with a picture, advertisement, or message",
+    "variations": [
+      "poster",
+      "posters"
+    ],
+    "emoji": "📜📢"
+  },
+  "posture": {
+    "word": "posture",
+    "definition": "the way a person holds or positions their body",
+    "variations": [
+      "posture",
+      "postures"
+    ],
+    "emoji": "🧍✅"
+  },
+  "practise": {
+    "word": "practise",
+    "definition": "to do something many times so that you can do it better",
+    "variations": [
+      "practise",
+      "practises",
+      "practised",
+      "practising",
+      "practice"
+    ],
+    "emoji": "🔁✅"
+  },
+  "preparation": {
+    "word": "preparation",
+    "definition": "the work done to get ready for something",
+    "variations": [
+      "preparation",
+      "preparations"
+    ],
+    "emoji": "✅📝"
+  },
+  "presentation": {
+    "word": "presentation",
+    "definition": "the way something is shown or explained to others.",
+    "variations": [
+      "presentation",
+      "presentations",
+      "present"
+    ],
+    "emoji": "📋🎤"
+  },
+  "props": {
+    "word": "props",
+    "definition": "objects used by actors during a play or performance",
+    "variations": [
+      "prop",
+      "props"
+    ],
+    "emoji": "🪑🎭"
+  },
+  "realistic": {
+    "word": "realistic",
+    "definition": "looking or seeming like real life",
+    "variations": [
+      "realistic",
+      "realistically"
+    ],
+    "emoji": "👀✅"
+  },
+  "recitation": {
+    "word": "recitation",
+    "definition": "the act of saying words aloud from memory or from a text for an audience",
+    "variations": [
+      "recitation",
+      "recitations",
+      "recite",
+      "recites",
+      "recited",
+      "reciting"
+    ],
+    "emoji": "🗣️📖"
+  },
+  "rede": {
+    "word": "rede",
+    "definition": "a traditional ball game played with the hands",
+    "variations": [
+      "rede",
+      "rede game",
+      "rede games"
+    ],
+    "emoji": "⚽🤾"
+  },
+  "reference": {
+    "word": "reference",
+    "definition": "a book, text, or source that gives information",
+    "variations": [
+      "reference",
+      "references"
+    ],
+    "emoji": "📚🔎"
+  },
+  "rehearse": {
+    "word": "rehearse",
+    "definition": "to practise a play, song, or performance before showing it to others",
+    "variations": [
+      "rehearse",
+      "rehearses",
+      "rehearsed",
+      "rehearsing"
+    ],
+    "emoji": "🎶🔁"
+  },
+  "representation": {
+    "word": "representation",
+    "definition": "something that shows or stands for something else",
+    "variations": [
+      "representation",
+      "representations"
+    ],
+    "emoji": "🪞🖼️"
+  },
+  "resilience": {
+    "word": "resilience",
+    "definition": "the ability to recover and keep going when things are difficult",
+    "variations": [
+      "resilience",
+      "resilient"
+    ],
+    "emoji": "🌟💪"
+  },
+  "rhythm": {
+    "word": "rhythm",
+    "definition": "the regular beat or pattern in music",
+    "variations": [
+      "rhythm",
+      "rhythms"
+    ],
+    "emoji": "🥁🎵"
+  },
+  "riddles": {
+    "word": "riddles",
+    "definition": "questions or statements that are puzzling and have clever answers",
+    "variations": [
+      "riddle",
+      "riddles"
+    ],
+    "emoji": "❓🧠"
+  },
+  "rituals": {
+    "word": "rituals",
+    "definition": "special actions done in a set way, often for cultural or religious reasons",
+    "variations": [
+      "ritual",
+      "rituals"
+    ],
+    "emoji": "🕯️🤲"
+  },
+  "rubber": {
+    "word": "rubber",
+    "definition": "an eraser used to remove pencil marks",
+    "variations": [
+      "rubber",
+      "rubbers"
+    ],
+    "emoji": "✏️🧽"
+  },
+  "sculpture": {
+    "word": "sculpture",
+    "definition": "a solid art object made by shaping material such as clay, stone, or cement",
+    "variations": [
+      "sculpture",
+      "sculptures"
+    ],
+    "emoji": "🗿🎨"
+  },
+  "selected": {
+    "word": "selected",
+    "definition": "chosen from a group.",
+    "variations": [
+      "select",
+      "selects",
+      "selected",
+      "selecting",
+      "selection"
+    ],
+    "emoji": "☑️👆"
+  },
+  "self-confidence": {
+    "word": "self-confidence",
+    "definition": "belief in your own ability to do things well.",
+    "variations": [
+      "self-confidence"
+    ],
+    "emoji": "😊💪"
+  },
+  "self-expression": {
+    "word": "self-expression",
+    "definition": "showing your thoughts, feelings, or ideas through actions or art",
+    "variations": [
+      "self-expression"
+    ],
+    "emoji": "💬🎨"
+  },
+  "shade": {
+    "word": "shade",
+    "definition": "a cool darker place away from direct sunlight",
+    "variations": [
+      "shade",
+      "shades",
+      "shaded"
+    ],
+    "emoji": "🌥️🌳"
+  },
+  "sieve": {
+    "word": "sieve",
+    "definition": "a tool with small holes used to separate fine material from larger pieces",
+    "variations": [
+      "sieve",
+      "sieves",
+      "sieved",
+      "sieving"
+    ],
+    "emoji": "🕳️🧺"
+  },
+  "singing": {
+    "word": "singing",
+    "definition": "making musical sounds with the voice",
+    "variations": [
+      "sing",
+      "sings",
+      "sang",
+      "sung",
+      "singing"
+    ],
+    "emoji": "🎤🎶"
+  },
+  "slab construction": {
+    "word": "slab construction",
+    "definition": "a way of modelling clay by joining flat pieces together",
+    "variations": [
+      "slab construction",
+      "slab constructions"
+    ],
+    "emoji": "🧱👐"
+  },
+  "society": {
+    "word": "society",
+    "definition": "a group of people living together in a community or country",
+    "variations": [
+      "society",
+      "societies"
+    ],
+    "emoji": "👥🏘️"
+  },
+  "stage": {
+    "word": "stage",
+    "definition": "the place where people perform in front of an audience",
+    "variations": [
+      "stage",
+      "stages"
+    ],
+    "emoji": "🎭📍"
+  },
+  "stool": {
+    "word": "stool",
+    "definition": "a small seat with legs and no back",
+    "variations": [
+      "stool",
+      "stools"
+    ],
+    "emoji": "🪑"
+  },
+  "storytelling": {
+    "word": "storytelling",
+    "definition": "the act of telling a story to other people",
+    "variations": [
+      "storytelling"
+    ],
+    "emoji": "📖🗣️"
+  },
+  "strengthen": {
+    "word": "strengthen",
+    "definition": "to make something stronger.",
+    "variations": [
+      "strengthen",
+      "strengthens",
+      "strengthened",
+      "strengthening"
+    ],
+    "emoji": "💪✅"
+  },
+  "stringed instrument": {
+    "word": "stringed instrument",
+    "definition": "a musical instrument that makes sound from strings that are pulled, rubbed, or plucked",
+    "variations": [
+      "stringed instrument",
+      "stringed instruments"
+    ],
+    "emoji": "🎻🎸"
+  },
+  "struck instrument": {
+    "word": "struck instrument",
+    "definition": "a musical instrument that makes sound when it is hit or beaten",
+    "variations": [
+      "struck instrument",
+      "struck instruments"
+    ],
+    "emoji": "🥁👏"
+  },
+  "sufficient": {
+    "word": "sufficient",
+    "definition": "enough for a need or purpose",
+    "variations": [
+      "sufficient"
+    ],
+    "emoji": "✅"
+  },
+  "talent": {
+    "word": "talent",
+    "definition": "a natural ability to do something well",
+    "variations": [
+      "talent",
+      "talents"
+    ],
+    "emoji": "⭐🎨"
+  },
+  "teamwork": {
+    "word": "teamwork",
+    "definition": "working together well with other people to reach a goal",
+    "variations": [
+      "teamwork"
+    ],
+    "emoji": "🤝👥"
+  },
+  "theme": {
+    "word": "theme",
+    "definition": "the main message or big idea in a story, play, or performance",
+    "variations": [
+      "theme",
+      "themes"
+    ],
+    "emoji": "💡📚"
+  },
+  "thickness": {
+    "word": "thickness",
+    "definition": "how thick or thin something is",
+    "variations": [
+      "thickness",
+      "thick",
+      "thin"
+    ],
+    "emoji": "📏"
+  },
+  "tile": {
+    "word": "tile",
+    "definition": "a small flat piece of material used here for building a tower in a game",
+    "variations": [
+      "tile",
+      "tiles"
+    ],
+    "emoji": "🧱🟫"
+  },
+  "timetable": {
+    "word": "timetable",
+    "definition": "a plan that shows times for activities.",
+    "variations": [
+      "timetable",
+      "timetables"
+    ],
+    "emoji": "🕒📅"
+  },
+  "traditional": {
+    "word": "traditional",
+    "definition": "belonging to old customs or ways that have been used for a long time",
+    "variations": [
+      "traditional",
+      "traditionally"
+    ],
+    "emoji": "🏺🌍"
+  },
+  "traditional tools": {
+    "word": "traditional tools",
+    "definition": "tools used in the usual physical form, not on a computer or screen",
+    "variations": [
+      "traditional tool",
+      "traditional tools"
+    ],
+    "emoji": "🛠️✏️"
+  },
+  "triangle": {
+    "word": "triangle",
+    "definition": "a metal musical instrument shaped like a triangle that is struck to make sound",
+    "variations": [
+      "triangle",
+      "triangles"
+    ],
+    "emoji": "🔺🎶"
+  },
+  "trumpet": {
+    "word": "trumpet",
+    "definition": "a musical instrument made to sound by blowing into it",
+    "variations": [
+      "trumpet",
+      "trumpets"
+    ],
+    "emoji": "🎺🎵"
+  },
+  "twig": {
+    "word": "twig",
+    "definition": "a small thin branch from a tree",
+    "variations": [
+      "twig",
+      "twigs"
+    ],
+    "emoji": "🌿🪵"
+  },
+  "unison": {
+    "word": "unison",
+    "definition": "doing or saying something together at the same time",
+    "variations": [
+      "unison"
+    ],
+    "emoji": "🎶👥"
+  },
+  "unity": {
+    "word": "unity",
+    "definition": "the state of being together and working as one",
+    "variations": [
+      "unity"
+    ],
+    "emoji": "🤝🫶"
+  },
+  "upright": {
+    "word": "upright",
+    "definition": "standing straight up",
+    "variations": [
+      "upright"
+    ],
+    "emoji": "🧍"
+  },
+  "venue": {
+    "word": "venue",
+    "definition": "the place where an event or show happens",
+    "variations": [
+      "venue",
+      "venues"
+    ],
+    "emoji": "📍🏟️"
+  },
+  "vertically": {
+    "word": "vertically",
+    "definition": "in an upright direction, from bottom to top",
+    "variations": [
+      "vertical",
+      "vertically"
+    ],
+    "emoji": "⬆️📏"
+  },
+  "vessel": {
+    "word": "vessel",
+    "definition": "a container used for holding things like water, food, or other materials",
+    "variations": [
+      "vessel",
+      "vessels"
+    ],
+    "emoji": "🏺🥣"
+  },
+  "violin": {
+    "word": "violin",
+    "definition": "a small stringed instrument played with a bow",
+    "variations": [
+      "violin",
+      "violins"
+    ],
+    "emoji": "🎻"
+  },
+  "visual arts": {
+    "word": "visual arts",
+    "definition": "forms of art that can be seen, such as drawing and painting",
+    "variations": [
+      "visual art",
+      "visual arts"
+    ],
+    "emoji": "🎨👀"
+  },
+  "vocal": {
+    "word": "vocal",
+    "definition": "related to the voice or singing",
+    "variations": [
+      "vocal",
+      "vocals"
+    ],
+    "emoji": "🗣️🎤"
+  },
+  "voice": {
+    "word": "voice",
+    "definition": "the sound made when a person speaks or sings",
+    "variations": [
+      "voice",
+      "voices"
+    ],
+    "emoji": "🗣️🎶"
+  },
+  "wind instrument": {
+    "word": "wind instrument",
+    "definition": "a musical instrument that makes sound when air is blown into or through it",
+    "variations": [
+      "wind instrument",
+      "wind instruments"
+    ],
+    "emoji": "🎺🌬️"
+  },
+  "xylophone": {
+    "word": "xylophone",
+    "definition": "a musical instrument with wooden bars that are struck to make sounds",
+    "variations": [
+      "xylophone",
+      "xylophones"
+    ],
+    "emoji": "🎼🥁"
+  }
+}

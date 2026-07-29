@@ -1,1 +1,1 @@
-# arts_sports
+# arts_and_sports

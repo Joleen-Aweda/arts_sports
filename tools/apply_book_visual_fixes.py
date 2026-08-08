@@ -5,17 +5,22 @@ import re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
+SLOTLESS_ACTIVITY_IDS = {"pg033_n0016", "pg052_n0007"}
 
 ICONS = {
+    "pg012_n0002":"activity-icon-pg012-01.png",
     "pg014_n0005":"activity-icon-pg014-01.png", "pg020_n0013":"activity-icon-pg020-01.png",
     "pg021_n0004":"activity-icon-pg021-01.png", "pg022_n0025":"activity-icon-pg022-01.png",
     "pg026_n0011":"activity-icon-pg026-01.png", "pg028_n0002":"activity-icon-pg028-01.png",
     "pg032_n0002":"activity-icon-pg032-01.png", "pg032_n0026":"activity-icon-pg032-02.png",
     "pg033_n0016":"activity-icon-pg033-01.png", "pg039_n0002":"activity-icon-pg039-01.png",
     "pg039_n0030":"activity-icon-pg039-02.png", "pg050_n0009":"activity-icon-pg050-01.png",
+    "pg038_n0009":"activity-icon-pg038-01.png", "pg045_n0003":"activity-icon-pg045-01.png",
+    "pg052_n0007":"activity-icon-pg052-01.png",
     "pg055_n0003":"activity-icon-pg055-01.png", "pg056_n0015":"activity-icon-pg056-01.png",
     "pg060_n0003":"activity-icon-pg060-01.png", "pg061_n0014":"activity-icon-pg061-01.png",
     "pg063_n0007":"activity-icon-pg063-01.png", "pg069_n0027":"activity-icon-pg069-01.png",
+    "pg065_n0014":"activity-icon-pg065-01.png",
     "pg072_n0002":"activity-icon-pg072-01.png", "pg074_n0032":"activity-icon-pg074-01.png",
     "pg075_n0019":"activity-icon-pg075-01.png",
 }
@@ -43,6 +48,45 @@ for page in ROOT.glob("pg*_sec001.html"):
                 f'background:url("images/{name}") center/contain no-repeat;vertical-align:middle;margin-right:.65rem;}}'
             )
         html = html.replace("</head>", '<style data-original-activity-icons>\n' + "\n".join(rules) + "\n</style>\n</head>")
+
+    # Reuse the existing, correctly positioned circular slot when the converted page
+    # already has one. This prevents the source icon from appearing beside a legacy
+    # placeholder/generated icon. Only truly slotless activities retain ::before.
+    for key, name in page_icons.items():
+        marker = f'data-original-activity-icon-slot="{key}"'
+        size_rule = (
+            f'[{marker}]{{width:4rem!important;height:4rem!important;min-width:4rem!important;'
+            'min-height:4rem!important;border-radius:9999px!important;flex:none!important}'
+        )
+        if marker in html:
+            if size_rule not in html:
+                html = html.replace("</style>\n</head>", "\n" + size_rule + "\n</style>\n</head>", 1)
+            continue
+        if key in SLOTLESS_ACTIVITY_IDS:
+            continue
+        title_pos = html.find(f'data-id="{key}"', html.find("</head>"))
+        section_pos = html.rfind("<section", 0, title_pos)
+        header = html[section_pos:title_pos]
+        candidates = list(re.finditer(r'<div class="([^"]*rounded-full[^"]*)"[^>]*>', header))
+        if not candidates:
+            continue
+        candidate = candidates[0]
+        absolute_start = section_pos + candidate.start()
+        absolute_end = section_pos + candidate.end()
+        opening = html[absolute_start:absolute_end]
+        style = (
+            f'background-image:url(&quot;images/{name}&quot;)!important;'
+            'background-position:center!important;background-size:contain!important;'
+            'background-repeat:no-repeat!important;'
+        )
+        replacement = opening[:-1] + f' {marker} style="{style}">'
+        html = html[:absolute_start] + replacement + html[absolute_end:]
+        rules = (
+            f'\n{size_rule}'
+            f'\n[{marker}]>*{{display:none!important}}'
+            f'\n[data-id="{key}"]::before{{content:none!important;display:none!important}}'
+        )
+        html = html.replace("</style>\n</head>", rules + "\n</style>\n</head>", 1)
 
     if html != original:
         page.write_text(html)

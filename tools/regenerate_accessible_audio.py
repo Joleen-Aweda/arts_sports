@@ -63,6 +63,14 @@ FORCE_SWAHILI_KEYS = {
     for suffix in ("", "_easy_read")
 }
 
+SPOKEN_OVERRIDES = {
+    "pg003_n0006": "Page five.",
+    "pg022_n0026": "Letter a. Read different books and texts from the library or other computer-based sources on the importance of singing.",
+    "pg022_n0026_easy_read": "Letter a. Read books and texts about why singing is important.",
+    "pg036_n0011": "Figure one: An example of a picture drawn freely using a pencil.",
+    "pg036_n0011_easy_read": "Figure one: A picture drawn freely using a pencil.",
+}
+
 
 def marker_groups(texts):
     """Return ordered marker records per page and normal/easy-read variant."""
@@ -105,6 +113,8 @@ def marker_kinds(texts):
 
 def spoken_text(key, value, kinds):
     """Expand visible markers while retaining every non-blank word."""
+    if key in SPOKEN_OVERRIDES:
+        return SPOKEN_OVERRIDES[key]
     cleaned = BLANKS.sub("", value).strip()
     cleaned = re.sub(
         r"\((i|ii|iii|iv|v|vi|vii|viii|ix|x)\)\s*(?:to|[–—-])\s*\((i|ii|iii|iv|v|vi|vii|viii|ix|x)\)",

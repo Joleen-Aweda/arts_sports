@@ -106,6 +106,15 @@ body, p, h1, h2, h3, h4, h5, h6, span, div, button, input, textarea, select {
   text-align: center !important;
 }
 
+/* Page 15 uses div-based rows instead of paragraphs. Keep its body and
+   exercise copy at the same reading size used throughout the book. */
+[data-section-id="pg015_sec001"] [data-id]:not([data-id="pg015_n0002"]),
+[data-section-id="pg015_sec002"] [data-id]:not([data-id="pg015_n0038"]) {
+  font-size: 1.125rem !important;
+  line-height: 1.6 !important;
+  font-weight: 400 !important;
+}
+
 #nav-container, #nav-container *,
 #interface-container, #interface-container * {
   font-family: 'Atkinson Hyperlegible', sans-serif;

@@ -64,6 +64,7 @@ FORCE_SWAHILI_KEYS = {
 }
 
 SPOKEN_OVERRIDES = {
+    "pg002_n0013": "Telephone. Plus two five five. Seven three five. Zero four one. One six eight. Seven three five. Zero four one. One seven zero.",
     "pg003_n0006": "Page five.",
     "pg022_n0026": "Letter a. Read different books and texts from the library or other computer-based sources on the importance of singing.",
     "pg022_n0026_easy_read": "Letter a. Read books and texts about why singing is important.",

@@ -47,9 +47,47 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'Sassoon Primary';
+  src: url('./fonts/SassoonPrimary.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Sassoon Primary';
+  src: url('./fonts/SassoonPrimary-Bold.ttf') format('truetype');
+  font-weight: 600 900;
+  font-style: normal;
+  font-display: swap;
+}
+
 /* Apply the font globally */
 body, p, h1, h2, h3, h4, h5, h6, span, div, button, input, textarea, select {
-  font-family: "Merriweather", serif;
+  font-family: "Sassoon Primary", "Comic Sans MS", "Trebuchet MS", sans-serif;
+}
+
+/* Keep the textbook pages visually aligned while preserving each page's
+   existing content, hierarchy, and responsive spacing. */
+#content {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 64rem;
+  margin-inline: auto;
+}
+
+#content > section,
+#content > [data-merged-section],
+#content > [data-merged-section] > section {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: none;
+}
+
+#content,
+#content * {
+  font-family: "Sassoon Primary", "Comic Sans MS", "Trebuchet MS", sans-serif !important;
 }
 
 #nav-container, #nav-container *,

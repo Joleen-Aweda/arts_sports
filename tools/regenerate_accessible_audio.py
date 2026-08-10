@@ -9,8 +9,6 @@ import sys
 from collections import defaultdict
 from pathlib import Path
 
-import edge_tts
-
 ROOT = Path(__file__).resolve().parents[1]
 TEXTS = ROOT / "content/i18n/en/texts.json"
 AUDIOS = ROOT / "content/i18n/en/audios.json"
@@ -56,6 +54,15 @@ SWAHILI_RE = re.compile(
     re.I,
 )
 
+# The first three bibliography entries are Swahili publications. Their text is
+# split across spans in the HTML, so force every span in those three entries to
+# use the older adult male Swahili voice.
+FORCE_SWAHILI_KEYS = {
+    f"pg080_n{number:04d}{suffix}"
+    for number in (4, 5, 6, 8, 9, 10, 12, 13, 14)
+    for suffix in ("", "_easy_read")
+}
+
 
 def marker_groups(texts):
     """Return ordered marker records per page and normal/easy-read variant."""
@@ -99,6 +106,15 @@ def marker_kinds(texts):
 def spoken_text(key, value, kinds):
     """Expand visible markers while retaining every non-blank word."""
     cleaned = BLANKS.sub("", value).strip()
+    cleaned = re.sub(
+        r"\((i|ii|iii|iv|v|vi|vii|viii|ix|x)\)\s*(?:to|[–—-])\s*\((i|ii|iii|iv|v|vi|vii|viii|ix|x)\)",
+        lambda match: (
+            f"Roman {NUMBER_WORDS[ROMAN_VALUES[match.group(1).lower()]]} to "
+            f"Roman {NUMBER_WORDS[ROMAN_VALUES[match.group(2).lower()]]}"
+        ),
+        cleaned,
+        flags=re.I,
+    )
     match = PAREN_MARKER.match(cleaned)
     if match:
         token, remainder = match.group(1).lower(), match.group(2).strip()
@@ -154,10 +170,12 @@ def language_segments(text):
 
 
 async def render_one(key, value, filename, kinds, semaphore):
+    import edge_tts
+
     speech = spoken_text(key, value, kinds)
     if not speech:
         raise ValueError(f"{key}: no speakable text")
-    segments = language_segments(speech)
+    segments = [("sw", speech)] if key in FORCE_SWAHILI_KEYS else language_segments(speech)
     target = AUDIO_DIR / filename
     temporary = target.with_suffix(target.suffix + ".tmp")
     async with semaphore:
@@ -189,6 +207,7 @@ async def render_one(key, value, filename, kinds, semaphore):
 async def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--pages", help="comma-separated physical page numbers")
+    parser.add_argument("--keys", help="comma-separated text IDs to regenerate")
     parser.add_argument("--include-nonpage", action="store_true", help="include glossary/non-page IDs")
     parser.add_argument("--dry-run", action="store_true")
     parser.add_argument("--workers", type=int, default=10)
@@ -198,8 +217,11 @@ async def main():
     audios = json.loads(AUDIOS.read_text())
     kinds = marker_kinds(texts)
     page_filter = {int(value) for value in args.pages.split(",")} if args.pages else None
+    key_filter = set(args.keys.split(",")) if args.keys else None
     jobs = []
     for key, value in texts.items():
+        if key_filter is not None and key not in key_filter:
+            continue
         page_match = re.match(r"pg(\d{3})_", key)
         page = int(page_match.group(1)) if page_match else None
         if page_filter is not None:

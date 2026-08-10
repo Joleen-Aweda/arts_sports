@@ -90,6 +90,22 @@ body, p, h1, h2, h3, h4, h5, h6, span, div, button, input, textarea, select {
   font-family: "Sassoon Primary", "Comic Sans MS", "Trebuchet MS", sans-serif !important;
 }
 
+#content section:not([data-section-type="table_of_contents"]) p,
+#content section:not([data-section-type="table_of_contents"]) li {
+  font-size: 1.125rem !important;
+  line-height: 1.6 !important;
+}
+
+[data-id="pg007_n0002"], [data-id="pg017_n0002"],
+[data-id="pg024_n0002"], [data-id="pg035_n0002"],
+[data-id="pg041_n0002"], [data-id="pg047_n0002"],
+[data-id="pg057_n0002"], [data-id="pg067_n0002"] {
+  display: block;
+  width: 100%;
+  margin-inline: auto;
+  text-align: center !important;
+}
+
 #nav-container, #nav-container *,
 #interface-container, #interface-container * {
   font-family: 'Atkinson Hyperlegible', sans-serif;

@@ -1,6 +1,6 @@
 {
   "title": "Arts and Sports",
-  "bundleVersion": "8",
+  "bundleVersion": "9",
   "languages": {
     "available": [
       "en"
@@ -8,7 +8,7 @@
     "default": "en"
   },
   "features": {
-    "signLanguage": false,
+    "signLanguage": true,
     "easyRead": true,
     "glossary": true,
     "eli5": false,

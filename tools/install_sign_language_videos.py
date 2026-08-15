@@ -17,6 +17,7 @@ VIDEOS = ROOT / "content/i18n/en/videos.json"
 VIDEO_DIR = ROOT / "content/i18n/en/video"
 CONFIG = ROOT / "assets/config.json"
 PRELOADER = ROOT / "assets/offline-preloader.js"
+BUNDLE_VERSION = "13"
 
 
 def write_json(path: Path, value: object) -> None:
@@ -66,14 +67,14 @@ def rebuild_preloader() -> None:
 def install_loader() -> None:
     for page in [ROOT / "index.html", *sorted(ROOT.glob("pg*_sec*.html"))]:
         html = page.read_text(encoding="utf-8")
-        html = re.sub(r"(?<=\?v=)8(?=[\"'])", "9", html)
+        html = re.sub(r"(?<=\?v=)(?:8|9|10|11|12)(?=[\"'])", BUNDLE_VERSION, html)
         if "sign-language-muted.js" not in html:
             pattern = r'(?m)^(\s*)<script src="\./assets/base\.bundle\.local\.js"></script>$'
             if not re.search(pattern, html):
                 raise RuntimeError(f"Could not locate runtime script in {page.name}")
             html = re.sub(
                 pattern,
-                r'\1<script src="./assets/sign-language-muted.js?v=9"></script>\n\1<script src="./assets/base.bundle.local.js"></script>',
+                rf'\1<script src="./assets/sign-language-muted.js?v={BUNDLE_VERSION}"></script>\n\1<script src="./assets/base.bundle.local.js"></script>',
                 html,
                 count=1,
             )
@@ -118,7 +119,7 @@ def main() -> None:
     write_json(PAGES, pages)
 
     config = json.loads(CONFIG.read_text(encoding="utf-8"))
-    config["bundleVersion"] = "9"
+    config["bundleVersion"] = BUNDLE_VERSION
     config.setdefault("features", {})["signLanguage"] = True
     write_json(CONFIG, config)
 

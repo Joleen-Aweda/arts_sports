@@ -17,7 +17,7 @@ VIDEOS = ROOT / "content/i18n/en/videos.json"
 VIDEO_DIR = ROOT / "content/i18n/en/video"
 CONFIG = ROOT / "assets/config.json"
 PRELOADER = ROOT / "assets/offline-preloader.js"
-BUNDLE_VERSION = "13"
+BUNDLE_VERSION = "14"
 
 
 def write_json(path: Path, value: object) -> None:
@@ -67,7 +67,7 @@ def rebuild_preloader() -> None:
 def install_loader() -> None:
     for page in [ROOT / "index.html", *sorted(ROOT.glob("pg*_sec*.html"))]:
         html = page.read_text(encoding="utf-8")
-        html = re.sub(r"(?<=\?v=)(?:8|9|10|11|12)(?=[\"'])", BUNDLE_VERSION, html)
+        html = re.sub(r"(?<=\?v=)(?:8|9|10|11|12|13)(?=[\"'])", BUNDLE_VERSION, html)
         if "sign-language-muted.js" not in html:
             pattern = r'(?m)^(\s*)<script src="\./assets/base\.bundle\.local\.js"></script>$'
             if not re.search(pattern, html):

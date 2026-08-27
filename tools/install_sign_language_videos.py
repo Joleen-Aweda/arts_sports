@@ -17,7 +17,7 @@ VIDEOS = ROOT / "content/i18n/en/videos.json"
 VIDEO_DIR = ROOT / "content/i18n/en/video"
 CONFIG = ROOT / "assets/config.json"
 PRELOADER = ROOT / "assets/offline-preloader.js"
-BUNDLE_VERSION = "14"
+BUNDLE_VERSION = "15"
 
 
 def write_json(path: Path, value: object) -> None:
@@ -67,7 +67,7 @@ def rebuild_preloader() -> None:
 def install_loader() -> None:
     for page in [ROOT / "index.html", *sorted(ROOT.glob("pg*_sec*.html"))]:
         html = page.read_text(encoding="utf-8")
-        html = re.sub(r"(?<=\?v=)(?:8|9|10|11|12|13)(?=[\"'])", BUNDLE_VERSION, html)
+        html = re.sub(r"(?<=\?v=)(?:8|9|10|11|12|13|14)(?=[\"'])", BUNDLE_VERSION, html)
         if "sign-language-muted.js" not in html:
             pattern = r'(?m)^(\s*)<script src="\./assets/base\.bundle\.local\.js"></script>$'
             if not re.search(pattern, html):
@@ -89,7 +89,7 @@ def main() -> None:
     args = parser.parse_args()
 
     sources = {int(p.stem.removeprefix("page_")): p for p in args.source.glob("page_*.mp4")}
-    expected = set(range(1, 81))
+    expected = set(range(1, 81)) - {54}
     if set(sources) != expected:
         missing = sorted(expected - set(sources))
         extra = sorted(set(sources) - expected)
@@ -98,7 +98,7 @@ def main() -> None:
     VIDEO_DIR.mkdir(parents=True, exist_ok=True)
     jobs = []
     with ThreadPoolExecutor(max_workers=args.workers) as pool:
-        for number in range(1, 81):
+        for number in sorted(expected):
             target = VIDEO_DIR / f"page_{number}.mp4"
             jobs.append(pool.submit(transcode, args.ffmpeg, sources[number], target))
         source_bytes = target_bytes = completed = 0
@@ -107,9 +107,9 @@ def main() -> None:
             source_bytes += before
             target_bytes += after
             completed += 1
-            print(f"[{completed:02d}/80] {source_bytes / 2**30:.2f} GiB -> {target_bytes / 2**30:.2f} GiB", flush=True)
+            print(f"[{completed:02d}/{len(expected)}] {source_bytes / 2**30:.2f} GiB -> {target_bytes / 2**30:.2f} GiB", flush=True)
 
-    write_json(VIDEOS, {f"video-{n}": f"page_{n}.mp4" for n in range(1, 81)})
+    write_json(VIDEOS, {f"video-{n}": f"page_{n}.mp4" for n in sorted(expected)})
 
     pages = json.loads(PAGES.read_text(encoding="utf-8"))
     if len(pages) != 80:
@@ -125,7 +125,7 @@ def main() -> None:
 
     install_loader()
     rebuild_preloader()
-    print(f"Installed 80 muted sign-language videos in {VIDEO_DIR}")
+    print(f"Installed {len(expected)} muted sign-language videos in {VIDEO_DIR}")
 
 
 if __name__ == "__main__":

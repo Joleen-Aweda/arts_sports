@@ -1,7 +1,8 @@
 [
   {
     "section_id": "cv001_sec001",
-    "href": "index.html"
+    "href": "index.html",
+    "page_number": 0
   },
   {
     "section_id": "pg001_sec001",
@@ -405,6 +406,7 @@
   },
   {
     "section_id": "cv002_sec001",
-    "href": "back-cover.html"
+    "href": "back-cover.html",
+    "page_number": 81
   }
 ]

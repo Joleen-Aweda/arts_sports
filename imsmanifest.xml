@@ -243,6 +243,10 @@
       <file href="content/navigation/nav.html" />
       <file href="content/pages.json" />
       <file href="content/toc.json" />
+      <file href="assets/review-interactions.js" />
+      <file href="content/i18n/en/audio/cv002_gp001_tx001.mp3" />
+      <file href="content/i18n/en/audio/pg007_n0013.mp3" />
+      <file href="images/pg001-certificate-original.png" />
       <file href="pg001_sec001.html" />
       <file href="pg002_sec001.html" />
 </resource>

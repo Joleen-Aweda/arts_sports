@@ -119,3 +119,184 @@ body, p, h1, h2, h3, h4, h5, h6, span, div, button, input, textarea, select {
 #interface-container, #interface-container * {
   font-family: 'Atkinson Hyperlegible', sans-serif;
 }
+
+/* 3rd review: one visual system for the complete textbook. */
+body { background: #ffffff; }
+
+#content {
+  width: min(100%, 64rem) !important;
+  max-width: 64rem !important;
+  margin-inline: auto !important;
+  padding: clamp(1rem, 3vw, 2rem) !important;
+}
+
+#content > section,
+#content > [data-merged-section],
+#content > [data-merged-section] > section,
+#content section[data-section-id] {
+  width: 100% !important;
+  max-width: none !important;
+  margin-inline: auto !important;
+  box-sizing: border-box;
+}
+
+#content :where(
+  section:not([data-section-type="front_cover"]):not([data-section-type="back_cover"]):not([data-section-type="copyright"]) p,
+  section:not([data-section-type="front_cover"]):not([data-section-type="back_cover"]):not([data-section-type="copyright"]) li,
+  section:not([data-section-type="front_cover"]):not([data-section-type="back_cover"]):not([data-section-type="copyright"]) label,
+  section:not([data-section-type="front_cover"]):not([data-section-type="back_cover"]):not([data-section-type="copyright"]) [data-id]:not(img):not(h1):not(h2):not(h3)
+) {
+  font-size: 1.125rem !important;
+  line-height: 1.6 !important;
+}
+
+#content h1[data-id], #content h1 [data-id] {
+  font-size: 2.5rem !important;
+  line-height: 1.15 !important;
+}
+
+#content h2[data-id], #content h2 [data-id] {
+  font-size: 2rem !important;
+  line-height: 1.2 !important;
+}
+
+#content h3[data-id], #content h3 [data-id] {
+  font-size: 1.5rem !important;
+  line-height: 1.3 !important;
+}
+
+#content .book-section-title {
+  font-size: 1.75rem !important;
+  line-height: 1.25 !important;
+}
+
+@media (max-width: 640px) {
+  #content { padding: 0.75rem !important; }
+  #content h1[data-id], #content h1 [data-id] { font-size: 2rem !important; }
+  #content h2[data-id], #content h2 [data-id] { font-size: 1.65rem !important; }
+  #content h3[data-id], #content h3 [data-id],
+  #content .book-section-title { font-size: 1.4rem !important; }
+}
+
+/* Review-specific alignment corrections. */
+[data-section-id="pg015_sec002"] p,
+[data-section-id="pg023_sec001"] p,
+[data-section-id="pg042_sec001"] p,
+[data-section-id="pg045_sec001"] p,
+[data-section-id="pg045_sec002"] p,
+[data-section-id="pg056_sec002"] p,
+[data-section-id="pg064_sec001"] p,
+[data-section-id="pg069_sec002"] p {
+  text-align: left !important;
+  padding-left: 0 !important;
+  text-indent: 0 !important;
+}
+
+[data-id="pg036_n0011"],
+[data-id="pg058_n0021"] {
+  display: block;
+  width: 100%;
+  text-align: center !important;
+}
+
+[data-id="pg075_n0030"] { font-weight: 400 !important; }
+
+[data-section-id="pg070_sec001"] [data-id="pg070_n0008"],
+[data-section-id="pg070_sec001"] [data-id="pg070_n0019"],
+[data-section-id="pg070_sec001"] [data-id="pg070_n0031"] {
+  display: block;
+
+/* Generated selectors for recurring textbook labels. */
+#content [data-id="pg004_n0020"],
+#content [data-id="pg012_n0002"],
+#content [data-id="pg012_n0005"],
+#content [data-id="pg014_n0005"],
+#content [data-id="pg015_n0038"],
+#content [data-id="pg016_n0002"],
+#content [data-id="pg017_n0015"],
+#content [data-id="pg020_n0013"],
+#content [data-id="pg021_n0004"],
+#content [data-id="pg022_n0025"],
+#content [data-id="pg022_n0023"],
+#content [data-id="pg023_n0003"],
+#content [data-id="pg023_n0025"],
+#content [data-id="pg024_n0016"],
+#content [data-id="pg026_n0011"],
+#content [data-id="pg028_n0002"],
+#content [data-id="pg028_n0004"],
+#content [data-id="pg032_n0002"],
+#content [data-id="pg032_n0026"],
+#content [data-id="pg033_n0002"],
+#content [data-id="pg033_n0016"],
+#content [data-id="pg034_n0003"],
+#content [data-id="pg034_n0016"],
+#content [data-id="pg035_n0014"],
+#content [data-id="pg038_n0009"],
+#content [data-id="pg039_n0002"],
+#content [data-id="pg039_n0030"],
+#content [data-id="pg040_n0002"],
+#content [data-id="pg040_n0020"],
+#content [data-id="pg041_n0015"],
+#content [data-id="pg042_n0030"],
+#content [data-id="pg045_n0003"],
+#content [data-id="pg045_n0029"],
+#content [data-id="pg046_n0006"],
+#content [data-id="pg047_n0013"],
+#content [data-id="pg050_n0009"],
+#content [data-id="pg050_n0012"],
+#content [data-id="pg052_n0007"],
+#content [data-id="pg052_n0009"],
+#content [data-id="pg055_n0003"],
+#content [data-id="pg055_n0007"],
+#content [data-id="pg056_n0015"],
+#content [data-id="pg056_n0020"],
+#content [data-id="pg056_n0025"],
+#content [data-id="pg057_n0015"],
+#content [data-id="pg060_n0003"],
+#content [data-id="pg061_n0014"],
+#content [data-id="pg063_n0007"],
+#content [data-id="pg064_n0002"],
+#content [data-id="pg065_n0014"],
+#content [data-id="pg066_n0002"],
+#content [data-id="pg066_n0010"],
+#content [data-id="pg067_n0013"],
+#content [data-id="pg069_n0027"],
+#content [data-id="pg072_n0002"],
+#content [data-id="pg074_n0032"],
+#content [data-id="pg075_n0019"],
+#content [data-id="pg075_n0028"],
+#content [data-id="pg076_n0003"],
+#content [data-id="gl064"],
+#content [data-id="pg007_n0013"] {
+  font-size: 1.75rem !important;
+  line-height: 1.25 !important;
+  font-weight: 700 !important;
+}
+
+
+/* Remaining 3rd-review page refinements. */
+[data-section-id="pg031_sec001"] [data-id="pg031_n0008"],
+[data-section-id="pg031_sec001"] [data-id="pg031_n0009"],
+[data-section-id="pg031_sec001"] [data-id="pg031_n0010"] {
+  border-bottom: 2px solid #64748b;
+  border-radius: 0;
+}
+[data-section-id="pg031_sec001"] [data-id="pg031_n0008"]::after,
+[data-section-id="pg031_sec001"] [data-id="pg031_n0009"]::after,
+[data-section-id="pg031_sec001"] [data-id="pg031_n0010"]::after {
+  content: "";
+  display: block;
+  width: 2.5rem;
+  border-bottom: 2px solid #64748b;
+  transform: rotate(28deg);
+  transform-origin: left center;
+}
+[data-section-id="pg080_sec001"] > div:nth-of-type(2) {
+  text-align: left !important;
+}
+[data-section-id="pg080_sec001"] > div:nth-of-type(2) p:nth-child(1)::before { content: "1. "; }
+[data-section-id="pg080_sec001"] > div:nth-of-type(2) p:nth-child(2)::before { content: "2. "; }
+[data-section-id="pg080_sec001"] > div:nth-of-type(2) p:nth-child(3)::before { content: "3. "; }
+[data-section-id="pg077_sec002"] select {
+  display: block;
+}

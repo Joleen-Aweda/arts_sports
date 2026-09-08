@@ -44,7 +44,7 @@ SWAHILI_TERMS = (
     "Mungu Ibariki Afrika",
     "bongo fleva",
     "Ukuti ukuti",
-    "Mwanakombo", "Mtakuja", "Maweni",
+    "Mwanakombo", "Mtakuja", "Maweni", "Mikocheni",
     "baragumu", "lipenenga", "lilandi", "litungu", "manyanga",
     "kayamba", "enanga", "ndono", "njuga", "zeze",
     "singeli", "taarabu", "rede", "bao", "Juma", "Roza",
@@ -64,6 +64,10 @@ FORCE_SWAHILI_KEYS = {
 }
 
 SPOKEN_OVERRIDES = {
+    "pg002_n0008": "Mikocheni Area.",
+    "pg080_n0004": "Number one. Taasisi ya Elimu Tanzania, two thousand and five.",
+    "pg080_n0008": "Number two. Taasisi ya Elimu Tanzania, two thousand and six.",
+    "pg080_n0012": "Number three. Taasisi ya Elimu Tanzania, two thousand and nine.",
     "pg002_n0013": "Telephone. Plus two, five, five. Seven, three, five. Zero, four, one. One, six, eight. Seven, three, five. Zero, four, one. One, seven, zero.",
     "pg003_n0006": "Page five.",
     "pg022_n0026": "Letter a. Read different books and texts from the library or other computer-based sources on the importance of singing.",

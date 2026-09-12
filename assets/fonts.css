@@ -205,6 +205,7 @@ body { background: #ffffff; }
 [data-section-id="pg070_sec001"] [data-id="pg070_n0019"],
 [data-section-id="pg070_sec001"] [data-id="pg070_n0031"] {
   display: block;
+}
 
 /* Generated selectors for recurring textbook labels. */
 #content [data-id="pg004_n0020"],
@@ -299,4 +300,45 @@ body { background: #ffffff; }
 [data-section-id="pg080_sec001"] > div:nth-of-type(2) p:nth-child(3)::before { content: "3. "; }
 [data-section-id="pg077_sec002"] select {
   display: block;
+}
+
+
+/* Mobile and tablet reader safeguards (video update 23). */
+html, body { max-width: 100%; overflow-x: hidden; }
+#content, #content > *, #content section, #content article,
+#content div, #content figure, #content table { min-width: 0; }
+#content img, #content svg, #content canvas, #content video,
+#content iframe { max-width: 100% !important; height: auto; }
+#content :where(p, li, span, div, td, th, label, h1, h2, h3) {
+  overflow-wrap: anywhere;
+  word-break: normal;
+}
+#content table { width: 100% !important; table-layout: fixed; }
+#content :where(.grid, [class*="grid-cols-"]) { max-width: 100%; }
+
+@media (max-width: 1024px) {
+  #content { width: 100% !important; padding: clamp(.85rem, 2.5vw, 1.5rem) !important; }
+  #content [class*="max-w-["] { max-width: 100% !important; }
+}
+
+@media (max-width: 767px) {
+  #content { padding: .75rem !important; }
+  #content :where([class*="px-"], [class*="p-"]) { max-width: 100%; }
+  #content :where(.grid-cols-2, .grid-cols-3, .grid-cols-4,
+    [class*="grid-cols-[2"], [class*="grid-cols-[3"], [class*="grid-cols-[4"]]) {
+    grid-template-columns: minmax(0, 1fr) !important;
+  }
+  #content table { font-size: 1rem; }
+  #content td, #content th { padding: .4rem !important; }
+}
+
+@media (max-width: 390px) {
+  #content { padding: .5rem !important; }
+  #content h1[data-id], #content h1 [data-id] { font-size: 1.75rem !important; }
+  #content h2[data-id], #content h2 [data-id] { font-size: 1.5rem !important; }
+  #content h3[data-id], #content h3 [data-id],
+  #content .book-section-title { font-size: 1.3rem !important; }
+  #content section:not([data-section-type="table_of_contents"]) :where(p, li, label) {
+    font-size: 1rem !important;
+  }
 }

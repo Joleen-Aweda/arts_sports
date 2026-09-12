@@ -8,7 +8,7 @@
     <meta name="page-section-id" content="0" />
     <link href="./content/tailwind_output.css" rel="stylesheet">
     <link href="./assets/libs/fontawesome/css/all.min.css" rel="stylesheet">
-    <link href="./assets/fonts.css?v=21" rel="stylesheet">
+    <link href="./assets/fonts.css?v=25" rel="stylesheet">
 <link rel="stylesheet" href="./assets/sign-language-video.css">
 </head>
 <body class="min-h-screen flex items-center justify-center bg-white">
@@ -21,11 +21,32 @@
     </main>
     <div class="relative z-50" id="interface-container"></div>
     <div class="relative z-50" id="nav-container"></div>
-    <script src="./assets/offline-preloader.js?v=21"></script>
+    <script src="./assets/offline-preloader.js?v=25"></script>
     <script src="./assets/scorm.js"></script>
-    <script src="./assets/sign-language-muted.js?v=21"></script>
+    <script src="./assets/sign-language-muted.js?v=25"></script>
     <script src="./assets/media-playback-independence.js"></script>
-<script src="./assets/base.bundle.local.js?v=21"></script>
+<script src="./assets/base.bundle.local.js?v=25"></script>
 <script src="./assets/sign-language-video.js"></script>
+<script>
+  // The cover keeps runtime page ID 0 so its sign-language video remains
+  // correctly routed. Present it as page 1 in the reader controls.
+  (function showCoverAsPageOne() {
+    function update() {
+      document.querySelectorAll("#nav-container div").forEach(function (node) {
+        var spans = node.children;
+        if (spans.length === 3 && spans[0].tagName === "SPAN" &&
+            spans[1].textContent.trim() === "/" &&
+            spans[0].textContent.trim() === "0") {
+          spans[0].textContent = "1";
+        }
+      });
+    }
+    update();
+    new MutationObserver(update).observe(document.getElementById("nav-container"), {
+      childList: true,
+      subtree: true
+    });
+  })();
+</script>
 </body>
 </html>

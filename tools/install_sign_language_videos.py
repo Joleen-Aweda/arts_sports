@@ -52,6 +52,9 @@ def rebuild_preloader() -> None:
     inline = json.loads(match.group(2))
     mute_guard = ROOT / "assets/sign-language-muted.js"
     inline["./assets/sign-language-muted.js"] = mute_guard.read_text(encoding="utf-8")
+    page_number_display = ROOT / "assets/page-number-display.js"
+    if page_number_display.exists():
+        inline["./assets/page-number-display.js"] = page_number_display.read_text(encoding="utf-8")
     review_interactions = ROOT / "assets/review-interactions.js"
     if review_interactions.exists():
         inline["./assets/review-interactions.js"] = review_interactions.read_text(encoding="utf-8")

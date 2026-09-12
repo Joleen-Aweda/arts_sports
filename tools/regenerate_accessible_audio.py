@@ -69,7 +69,7 @@ SPOKEN_OVERRIDES = {
     "pg080_n0008": "Number two. Taasisi ya Elimu Tanzania, two thousand and six.",
     "pg080_n0012": "Number three. Taasisi ya Elimu Tanzania, two thousand and nine.",
     "pg002_n0013": "Telephone. Plus two, five, five. Seven, three, five. Zero, four, one. One, six, eight. Seven, three, five. Zero, four, one. One, seven, zero.",
-    "pg003_n0006": "Page five.",
+    "pg003_n0006": "Page six.",
     "pg022_n0026": "Letter a. Read different books and texts from the library or other computer-based sources on the importance of singing.",
     "pg022_n0026_easy_read": "Letter a. Read books and texts about why singing is important.",
     "pg036_n0011": "Figure one: An example of a picture drawn freely using a pencil.",
